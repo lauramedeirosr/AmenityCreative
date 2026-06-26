@@ -932,37 +932,15 @@ header.cl-head .it { color:var(--blue-d); }
    V3 — LOGO SVG ANIMADA, HERO IMAGEM, MELHORIAS GERAIS
    ========================================================================== */
 
-/* ── Hero scan line — linha de luz que percorre o banner ─────────── */
-.hero-scan {
-  position:absolute; inset:0; z-index:1; pointer-events:none; overflow:hidden;
+/* ── Portfolio link destaque na nav ──────────────────────────────── */
+.nl a.porto-hl,
+nav.dark-nav .nl a.porto-hl,
+.mob a.porto-hl {
+  color:var(--blue) !important;
+  font-weight:700;
 }
-.hero-scan::after {
-  content:"";
-  position:absolute; left:0; right:0; height:2px; top:0;
-  background:linear-gradient(90deg, transparent 0%, rgba(29,26,255,.5) 30%, rgba(100,100,255,.8) 50%, rgba(29,26,255,.5) 70%, transparent 100%);
-  box-shadow:0 0 18px 4px rgba(29,26,255,.35);
-  animation:heroScan 9s ease-in-out infinite;
-  opacity:0;
-}
-@keyframes heroScan {
-  0%   { top:-2px; opacity:0; }
-  5%   { opacity:1; }
-  90%  { opacity:.7; }
-  100% { top:100%; opacity:0; }
-}
-
-/* ── Imagem de fundo do hero com parallax ─────────────────────────── */
-.hero-img {
-  position:absolute; inset:0; z-index:0; overflow:hidden;
-}
-.hero-img img {
-  width:100%; height:115%; object-fit:cover;
-  object-position:center 30%;
-  opacity:.18; filter:grayscale(20%) contrast(1.1);
-  transform-origin:top center;
-  will-change:transform;
-  display:block;
-}
+.nl a.porto-hl::after,
+nav.dark-nav .nl a.porto-hl::after { width:100% !important; background:var(--blue); }
 
 /* ── Logo SVG — 4 setas / chevrons ───────────────────────────────── */
 .logo-svg {

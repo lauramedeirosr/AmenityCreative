@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amenity Creative — Produtora de audiovisual para eventos</title>
+  <link rel="icon" type="image/png" href="img/fotos/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
         <a href="#metodo">Método</a>
-        <a href="pages/portfolio.html">Portfólio</a>
+        <a href="pages/portfolio.html" class="porto-hl">Portfólio</a>
       </div>
       <a href="#contato" class="ncta">Solicitar proposta</a>
       <button class="hbg" id="hbg" aria-label="Menu">
@@ -40,7 +41,7 @@
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
     <a href="#metodo">Método</a>
-    <a href="pages/portfolio.html">Portfólio</a>
+    <a href="pages/portfolio.html" class="porto-hl">Portfólio</a>
     <a href="#contato" class="mob-cta">Solicitar proposta</a>
   </div>
 
@@ -49,10 +50,6 @@
        HERO — cinematic dark
   ═══════════════════════════════════════════════════════════════ -->
   <header class="hero">
-    <div class="hero-img">
-      <img src="img/fotos/LUCAS-3.JPG" alt="" aria-hidden="true" id="heroParallax">
-    </div>
-    <div class="hero-scan" aria-hidden="true"></div>
     <div class="wrap">
 
       <div class="hero-logo">
@@ -98,10 +95,6 @@
 
     </div>
 
-    <div class="scroll-ind">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
-    </div>
   </header>
 
 
@@ -313,13 +306,13 @@
 
       <div class="masonry reveal">
 
-        <a href="pages/cliente-celicia-giordano.html" class="masonry-item">
-          <img src="img/fotos/IMG_5524.JPEG" alt="Celicia Giordano"
-               data-lb="photo" data-cat="Arquiteta" data-name="Celicia Giordano">
+        <a href="pages/cliente-cecilia-giordano.html" class="masonry-item">
+          <img src="img/fotos/cecilia-01.JPEG" alt="Cecilia Giordano" loading="lazy"
+               data-lb="photo" data-cat="Arquiteta" data-name="Cecilia Giordano">
           <div class="masonry-overlay">
             <div class="masonry-info">
               <span class="mi-cat">Arquiteta</span>
-              <span class="mi-name">Celicia Giordano</span>
+              <span class="mi-name">Cecilia Giordano</span>
             </div>
           </div>
           <div class="masonry-arrow">
@@ -345,7 +338,7 @@
         </div>
 
         <a href="pages/cliente-mileide-mihaile.html" class="masonry-item">
-          <img src="img/fotos/IMG_5525.JPEG" alt="Mileide Mihaile"
+          <img src="img/fotos/IMG_5525.JPEG" alt="Mileide Mihaile" loading="lazy"
                style="object-position:center 18%"
                data-lb="photo" data-cat="Influencer" data-name="Mileide Mihaile">
           <div class="masonry-overlay">
@@ -376,36 +369,7 @@
           </div>
         </div>
 
-        <a href="pages/cliente-lagoinha.html" class="masonry-item">
-          <img src="img/fotos/LUCAS-3.JPG" alt="Lagoinha Conferência 3D"
-               data-lb="photo" data-cat="Lagoinha" data-name="Conferência 3D">
-          <div class="masonry-overlay">
-            <div class="masonry-info">
-              <span class="mi-cat">Lagoinha</span>
-              <span class="mi-name">Conferência 3D</span>
-            </div>
-          </div>
-          <div class="masonry-arrow">
-            <svg viewBox="0 0 16 16"><path stroke-width="1.5" d="M3 13L13 3M13 3H6M13 3v7"/></svg>
-          </div>
-        </a>
 
-        <div class="masonry-vid" data-lb="video"
-             data-cat="Lançamento" data-name="Rennó 14"
-             data-src="img/videos/LANCAMENTO RENNO 14 OPPO _ SHOW KENDRIK LAMAR.mp4">
-          <video playsinline preload="metadata" muted loop>
-            <source src="img/videos/LANCAMENTO RENNO 14 OPPO _ SHOW KENDRIK LAMAR.mp4" type="video/mp4">
-          </video>
-          <div class="mv-overlay">
-            <div class="mv-play">
-              <svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
-            </div>
-          </div>
-          <div class="mv-info">
-            <span class="mi-cat">Lançamento</span>
-            <span class="mi-name">Rennó 14</span>
-          </div>
-        </div>
 
       </div>
 
@@ -517,7 +481,12 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand" style="margin-bottom:14px;display:inline-flex">
-            <span class="b-diamond"></span>
+            <svg class="logo-svg" viewBox="0 0 44 44" fill="currentColor" aria-hidden="true">
+              <path class="lp lp-t" d="M22 3L33 14H27L22 9L17 14H11L22 3Z"/>
+              <path class="lp lp-b" d="M22 41L11 30H17L22 35L27 30H33L22 41Z"/>
+              <path class="lp lp-l" d="M3 22L14 11V17L9 22L14 27V33L3 22Z"/>
+              <path class="lp lp-r" d="M41 22L30 33V27L35 22L30 17V11L41 22Z"/>
+            </svg>
             <span class="b-text" style="color:#fff">amenity <em>creative</em></span>
           </a>
           <p>Agência de marketing full-service e produtora audiovisual. Operamos na intersecção entre criatividade estratégica e execução impecável.</p>

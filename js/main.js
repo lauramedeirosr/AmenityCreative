@@ -182,17 +182,4 @@ document.querySelectorAll('.masonry-vid video, .pcard-vid video, .collage-item v
   v.muted = true; v.volume = 0;
 });
 
-/* ── Hero parallax ───────────────────────────────────────────────── */
-const heroParallax = document.getElementById('heroParallax');
-const heroSection  = document.querySelector('header.hero');
-if (heroParallax && heroSection) {
-  const onPx = () => {
-    const y = window.scrollY;
-    if (y <= heroSection.offsetHeight) {
-      heroParallax.style.transform = `translateY(${y * 0.32}px)`;
-    }
-  };
-  window.addEventListener('scroll', onPx, { passive: true });
-  onPx();
-}
 
